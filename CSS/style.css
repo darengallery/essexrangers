@@ -2,3 +2,39 @@
     box-sizing: border-box;
     font-family: "Times New Roman", Times, serif;
 }
+
+.dark-blue {
+    background-color: #00447f;
+}
+
+.light-blue {
+    background-color: #799dd1;
+}
+
+#light {
+    color: #799dd1;
+}
+
+#main {
+    background-image: url(../IMAGES/essexrangersbackground.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#main-rev {
+    background-image: url(../IMAGES/essexrangersbackgroundreverse.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#main-rev-dark {
+    background-image: url(../IMAGES/essexrangersbackgroundreverse.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
+}
