@@ -38,3 +38,59 @@
     background-size: cover;
     color: #000000;
 }
+
+#background {
+    background-image: url(../IMAGES/IMG_0369.JPG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#background1 {
+    background-image: url(../IMAGES/IMG_0383.JPG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#background2 {
+    background-image: url(../IMAGES/IMG_0393.JPG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#background3 {
+    background-image: url(../IMAGES/IMG_0405.JPG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#background4 {
+    background-image: url(../IMAGES/IMG_0444.JPG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#background5 {
+    background-image: url(../IMAGES/IMG_0469.JPG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#background6 {
+    background-image: url(../IMAGES/IMG_0501.JPG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
