@@ -3,13 +3,9 @@
     font-family: "Times New Roman", Times, serif;
 }
 
-.nav-item {
+.nav-link {
+    color: white;
     font-weight: bolder;
-    color: white;
-}
-
-#menu .button {
-    color: white;
 }
 
 .dark-blue {
