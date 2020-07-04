@@ -66,21 +66,28 @@
                     <div class="col-lg-10 col-md-12 mx-auto" id="main">
                         <h1>Essex Rangers FC Registration Form</h1>
                         <div class="messages float-right pr-5">* required</div>
-
                         <form id="contact-form" method="post" action="/PHP/sendmail.php" role="form"><br>
                             <div class="controls">
+                                <h3 class="text-primary">Player Information</h3>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="form_name">Parent/Guardian Name *</label>
-                                            <input id="form_name" type="text" name="name" class="form-control" max="2014" min="2002" placeholder="Please enter parent/guardian name" required="required" data-error="parent name is required">
+                                            <label for="form_playersFirstName">Players first name *</label>
+                                            <input id="form_playersFirstName" type="text" name="playersFirstName" class="form-control" placeholder="Please enter players first name" required="required" data-error="players name is required">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="form_playersName">Players name *</label>
-                                            <input id="form_playersName" type="text" name="playersName" class="form-control" placeholder="Please enter players name" required="required" data-error="players name is required">
+                                            <label for="form_playersLastName">Players last name *</label>
+                                            <input id="form_playersLastName" type="text" name="playersLastName" class="form-control" placeholder="Please enter players last name" required="required" data-error="players name is required">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_dob">Players Date of birth *</label>
+                                            <input id="form_dob" type="date" min="2002-01-01" max="2015-01-01" name="dob" class="form-control" required="required" data-error="date of birth is required">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -93,57 +100,68 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="form_playersSchool">Players school address *</label>
-                                            <input id="form_playersSchool" type="text" name="playersSchool" class="form-control" placeholder="Please enter players school address" required="required" data-error="players school is required">
+                                            <label for="form_playersSchoolAddress">Players school address *</label>
+                                            <input id="form_playersSchoolAddress" type="text" name="playersSchoolAddress" class="form-control" placeholder="Please enter players school address" required="required" data-error="players school is required">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="form_playersSchool">Players school postcode*</label>
-                                            <input id="form_playersSchool" type="text" name="playersSchool" class="form-control" placeholder="Please enter players school postcode" required="required" data-error="players school is required">
+                                            <label for="form_playersSchoolPostcode">Players school postcode*</label>
+                                            <input id="form_playersSchoolPostcode" type="text" name="playersSchoolPostcode" class="form-control" placeholder="Please enter players school postcode" required="required" data-error="players school postcode is required">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="form_playersSchool">Players current school year *</label>
-                                            <input id="form_playersSchool" type="text" name="playersSchool" class="form-control" placeholder="Please enter players CURRENT school year" required="required" data-error="players school is required">
+                                            <label for="form_playersSchoolYear">Players current school year *</label>
+                                            <input id="form_playersSchoolYear" type="number" name="playersSchoolYear" class="form-control" placeholder="Please enter players CURRENT school year" required="required" data-error="players school year is required">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="form_dob">Players Date of birth *</label>
-                                            <input id="form_dob" type="date" min="2002-01-01" max="2015-01-01" name="dob" class="form-control" required="required" data-error="date of birth is required">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
+                                        <label for="form_playersHomeAddress">Players home address *</label>
+                                        <input type="text" id="form_playerHomeAddress" name="playersHomeAddress" class="form-control" placeholder="Please enter players home address" required="required" data-error="a home address is required">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="fprm_playersHomePostcode">Players home postcode *</label>
+                                        <input type="text" id="form_PlayersHomePostcode" name="PlayersHomePostcode" class="form-control" placeholder="Please enter players home postcode" required="required" data-error="a home postcode is required">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="form_gender">Players gender</label><br>
-                                            <input type="radio" name="gender" value="female">Female
-                                            <input type="radio" name="gender" value="male">Male
-                                            <input type="radio" name="gender" value="other">Other
-                                        </div>
+                            </div>
+                            <h3 class="pt-5 text-primary">Parent/Guardian Information</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_FirstName">First name *</label>
+                                        <input id="form_FirstName" type="text" name="FirstName" class="form-control" placeholder="Please enter your first name" required="required" data-error="first name is required">
+                                        <div class="help-block with-errors"></div>
                                     </div>
-
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="address">Players address *</label>
-                                        <input type="text" id="form_address" name="address" class="form-control" placeholder="Please enter players address" required="required" data-error="an address is required">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastName">Last name *</label>
+                                        <input id="form_lastName" type="text" name="lastName" class="form-control" placeholder="Please enter your last name" required="required" data-error="last name is required">
+                                        <div class="help-block with-errors"></div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="postcode">Players postcode *</label>
-                                        <input type="text" id="form_postcode" name="postcode" class="form-control" placeholder="Please enter players postcode" required="required" data-error="a postcode is required">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_relationship">Relationship to player *</label>
+                                        <input id="form_relationship" type="text" name="relationship" class="form-control" placeholder="Please enter your relationship to player" required="required" data-error="relationship is required">
+                                        <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
+                                <div class="col-md-6">
+                                    <label for="form_homeAddress">Home address (if different)</label>
+                                    <input type="text" id="form_homeAddress" name="homeAddress" class="form-control" placeholder="Please enter home address (if different)">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="fprm_homePostcode">Home postcode (if different)</label>
+                                    <input type="text" id="form_homePostcode" name="homePostcode" class="form-control" placeholder="Please enter home postcode (if different)">
+                                </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_homePhone">Home telephone </label>
@@ -152,8 +170,8 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="form_contactPhone">Contact telephone *</label>
-                                        <input type="tel" id="form_contactPhone" name="contactPhone" class="form-control" placeholder="Please enter main contact number" required="required" data-error="contact number is required">
+                                        <label for="form_mobilePhone">Mobile telephone *</label>
+                                        <input type="tel" id="form_mobilePhone" name="mobilePhone" class="form-control" placeholder="Please enter mobile phone number" required="required" data-error="contact number is required">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -179,7 +197,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row"></div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="radio">
@@ -188,9 +205,9 @@
                                         <label><input type="radio" name="optradio" required="required" data-error="First Aid must be allowed or denied">No</label>
                                     </div>
                                 </div>
-                                <div class="col-md-6 pb-3">
-                                    <input type="submit" class="btn btn-warning btn-send" value="Send form">
-                                </div>
+                            </div>
+                            <div class="col-md-6 pb-3 pt-5">
+                                <input type="submit" class="btn btn-warning btn-send" value="Send form">
                             </div>
                         </form>
                     </div>
