@@ -21,12 +21,13 @@ $medical = $_POST['medical'];
 $message = $_POST['message'];
 $optradio = $_POST['optradio'];
 
-$formcontent="From: $name \n $firstName \n Players First Name: $playersFirstName \n PLayers Last Name: $playersLastName \n Players date-of-Birth: $dob \n Players School:  $playersSchool \n Players School Address: $playersSchoolAddress \n Players School postcode: $playersSchoolPostcode \n Players School Year: $playersSchoolYear \n Players Home Address: $playersHomeAddress \n Players Home Postcode: $playersHomePostcode \n First Name: $name \n Last Name: $lastName \n Relationship to player: $relationship \n homeAddress: $homeAddress \n homePostcode: $homePostcode \n Home Phone: $homePhone \n Mobile Phone: $mobilePhone \n Medical: $medical \n Message: $message \n First Aid: $optradio";
+$formcontent="$firstName \n Players First Name: $playersFirstName \n PLayers Last Name: $playersLastName \n Players date-of-Birth: $dob \n Players School:  $playersSchool \n Players School Address: $playersSchoolAddress \n Players School postcode: $playersSchoolPostcode \n Players School Year: $playersSchoolYear \n Players Home Address: $playersHomeAddress \n Players Home Postcode: $playersHomePostcode \n First Name: $name \n Last Name: $lastName \n Relationship to player: $relationship \n Home Address: $homeAddress \n Home Postcode: $homePostcode \n Home Phone: $homePhone \n Mobile Phone: $mobilePhone \n Email Address: $email \n Medical: $medical \n Message: $message \n First Aid: $optradio";
+
 $recipient = "daren_gallery@hotmail.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!" . " -" . "<a href='form.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
+echo "Thank You!" . " -" . "<a href='index.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
 exit;
 ?>
 
