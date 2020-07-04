@@ -1,4 +1,5 @@
 <?php
+$name = $_POST['firstName'.'lastName'];
 $playersFirstName = $_POST['playersFirstName'];
 $playersLastName = $_POST['playersLastName'];
 $dob = $_POST['dob'];
