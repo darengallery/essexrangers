@@ -1,4 +1,5 @@
 <?php
+
 $name = $_POST['firstName'.'lastName'];
 $playersFirstName = $_POST['playersFirstName'];
 $playersLastName = $_POST['playersLastName'];
@@ -30,3 +31,5 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 header('Location: http://www.essexrangers2020.org/thank_you.html');
 exit;
 ?>
+
+
