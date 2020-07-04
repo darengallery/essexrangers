@@ -9,7 +9,6 @@ $playersSchoolPostcode = $_POST['playersSchoolPostcode'];
 $playersSchoolYear = $_POST['playersSchoolYear'];
 $playersHomeAddress = $_POST['playersHomeAddress'];
 $playersHomePostcode = $_POST['playersHomePostcode'];
-
 $name = $_POST['name'];
 $lastName = $_POST['lastName'];
 $relationship = $_POST['relationship'];
