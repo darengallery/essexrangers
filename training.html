@@ -133,7 +133,7 @@
                                 <h1 class="text-center">Essex Rangers Training Form</h1>
                                 <div class="messages float-right pr-5">* required</div>
 
-                                <form id="contact-form" method="post" action="/PHP/sendmail.php" role="form"><br>
+                                <form id="contact-form" method="post" action="/PHP/sendmail1.php" role="form"><br>
                                     <div class="controls">
                                         <div class="row">
                                             <div class="col-md-6">
@@ -168,12 +168,16 @@
                                         <br>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label for="address">Players address *</label>
-                                                <input type="text" id="form_address" name="address" class="form-control" placeholder="Please enter players address" required="required" data-error="an address is required">
+                                                <div class="form-group">
+                                                    <label for="form_address">Players address *</label>
+                                                    <input type="text" id="form_address" name="address" class="form-control" placeholder="Please enter players address" required="required" data-error="an address is required">
+                                                </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="postcode">Players postcode *</label>
-                                                <input type="text" id="form_postcode" name="postcode" class="form-control" placeholder="Please enter players postcode" required="required" data-error="a postcode is required">
+                                                <div class="form-group">
+                                                    <label for="form_postcode">Players postcode *</label>
+                                                    <input type="text" id="form_postcode" name="postcode" class="form-control" placeholder="Please enter players postcode" required="required" data-error="a postcode is required">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
