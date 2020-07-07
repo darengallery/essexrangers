@@ -1,23 +1,34 @@
 <?php
-$name = $_POST['name'];
-$playersName = $_POST['playersName'];
-$playersSchool = $_POST['playersSchool'];
+
+$playersFirstName = $_POST['playersFirstName'];
+$playersLastName = $_POST['playersLastName'];
 $dob = $_POST['dob'];
-$gender = $_POST['gender'];
-$address = $_POST['address'];
-$postcode = $_POST['postcode'];
+$playersSchool = $_POST['playersSchool'];
+$playersSchoolAddress = $_POST['playersSchoolAddress'];
+$playersSchoolPostcode = $_POST['playersSchoolPostcode'];
+$playersSchoolYear = $_POST['playersSchoolYear'];
+$playersHomeAddress = $_POST['playersHomeAddress'];
+$playersHomePostcode = $_POST['playersHomePostcode'];
+$firstName = $_POST['firstName'];
+$lastName = $_POST['lastName'];
+$relationship = $_POST['relationship'];
+$homeAddress = $_POST['homeAddress'];
+$homePostcode = $_POST['homePostcode'];
 $homePhone = $_POST['homePhone'];
-$contactPhone = $_POST['contactPhone'];
+$mobilePhone = $_POST['mobilePhone'];
 $email = $_POST['email'];
 $medical = $_POST['medical'];
 $message = $_POST['message'];
 $optradio = $_POST['optradio'];
 
-$formcontent=" From: $name \n Players Name: $playersName \n Players School:  $playersSchool \n $gender gender: \n Address: $address \n postcode: $postcode \n Home Phone: $homePhone \n Contact Phone: $contactPhone \n Medical: $medical \n Message: $message \n First Aid: $optradio";
-$recipient = "admin@essexrangers2020.org";
+$formcontent="$firstName \n Players First Name: $playersFirstName \n PLayers Last Name: $playersLastName \n Players date-of-Birth: $dob \n Players School:  $playersSchool \n Players School Address: $playersSchoolAddress \n Players School postcode: $playersSchoolPostcode \n Players School Year: $playersSchoolYear \n Players Home Address: $playersHomeAddress \n Players Home Postcode: $playersHomePostcode \n First Name: $name \n Last Name: $lastName \n Relationship to player: $relationship \n Home Address: $homeAddress \n Home Postcode: $homePostcode \n Home Phone: $homePhone \n Mobile Phone: $mobilePhone \n Email Address: $email \n Medical: $medical \n Message: $message \n First Aid: $optradio";
+
+$recipient = "daren_gallery@hotmail.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-header('Location: http://www.essexrangers2020.org/thank_you.html');
+echo "Thank You!" . " -" . "<a href='index.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
 exit;
 ?>
+
+

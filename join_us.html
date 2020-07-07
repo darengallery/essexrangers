@@ -67,46 +67,196 @@
                     </div>
                 </div>
             </nav>
-            <div class="container">
-                <a href="rangers_contact.html" class="bg-primary text-light">Contact form</a>
-            </div>
-            <!-- Footer -->
-            <div class="container-fluid" id="main-rev">
-                <footer class="page-footer font-small mdb-color lighten-3 pt-4">
-                    <div class="container text-center text-md-left">
-                        <div class="row text-center">
-                            <div class="col-lg-4 col-md-6 mx-auto">
-                                <p>
-                                    <i class="fas fa-home mr-3"></i>Met Police Sports ground, Chigwell, <br>Essex IG7 6BD</p>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mx-auto">
-                                <p>
-                                    <i class="fas fa-envelope mr-3"></i><a href="mailto:info@essexrangers2020.org" style="color: white;">info@essexrangers2020.org</a>
-                                </p>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mx-auto">
-                                <p>
-                                    <i class="fas fa-phone mr-3"></i> 07737 965939</p>
-                            </div>
-                        </div>
-
-                        <!-- Copyright -->
-                        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                            <a href="https://www.darengallery.co.uk"> darengallery</a>
+            <div class="container-fluid">
+                <div class="container my-5 text-light" id="contact-section">
+                    <div class="row">
+                        <div class="col-lg-10 col-md-12 mx-auto" id="main">
+                            <h1>Essex Rangers FC Registration Form</h1>
+                            <div class="messages float-right pr-5">* required</div>
+                            <form id="contact-form" method="post" action="/PHP/sendmail.php" role="form"><br>
+                                <div class="controls">
+                                    <h3 class="text-primary">Player Information</h3>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_playersFirstName">Players first name *</label>
+                                                <input id="form_playersFirstName" type="text" name="playersFirstName" class="form-control" placeholder="Please enter players first name" required="required" data-error="players name is required">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_playersLastName">Players last name *</label>
+                                                <input id="form_playersLastName" type="text" name="playersLastName" class="form-control" placeholder="Please enter players last name" required="required" data-error="players name is required">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_dob">Players Date of birth *</label>
+                                                <input id="form_dob" type="date" min="2002-01-01" max="2015-01-01" name="dob" class="form-control" required="required" data-error="date of birth is required">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_playersSchool">Players school *</label>
+                                                <input id="form_playersSchool" type="text" name="playersSchool" class="form-control" placeholder="Please enter players school" required="required" data-error="players school is required">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_playersSchoolAddress">Players school address *</label>
+                                                <input id="form_playersSchoolAddress" type="text" name="playersSchoolAddress" class="form-control" placeholder="Please enter players school address" required="required" data-error="players school is required">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_playersSchoolPostcode">Players school postcode*</label>
+                                                <input id="form_playersSchoolPostcode" type="text" name="playersSchoolPostcode" class="form-control" placeholder="Please enter players school postcode" required="required" data-error="players school postcode is required">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_playersSchoolYear">Players current school year *</label>
+                                                <input id="form_playersSchoolYear" type="number" name="playersSchoolYear" class="form-control" placeholder="Please enter players CURRENT school year" required="required" data-error="players school year is required">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="form_playersHomeAddress">Players home address *</label>
+                                            <input type="text" id="form_playerHomeAddress" name="playersHomeAddress" class="form-control" placeholder="Please enter players home address" required="required" data-error="a home address is required">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="fprm_playersHomePostcode">Players home postcode *</label>
+                                            <input type="text" id="form_PlayersHomePostcode" name="PlayersHomePostcode" class="form-control" placeholder="Please enter players home postcode" required="required" data-error="a home postcode is required">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="pt-5 text-primary">Parent/Guardian Information</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_FirstName">First name *</label>
+                                            <input id="form_FirstName" type="text" name="FirstName" class="form-control" placeholder="Please enter your first name" required="required" data-error="first name is required">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_lastName">Last name *</label>
+                                            <input id="form_lastName" type="text" name="lastName" class="form-control" placeholder="Please enter your last name" required="required" data-error="last name is required">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_relationship">Relationship to player *</label>
+                                            <input id="form_relationship" type="text" name="relationship" class="form-control" placeholder="Please enter your relationship to player" required="required" data-error="relationship is required">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="form_homeAddress">Home address (if different)</label>
+                                        <input type="text" id="form_homeAddress" name="homeAddress" class="form-control" placeholder="Please enter home address (if different)">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="fprm_homePostcode">Home postcode (if different)</label>
+                                        <input type="text" id="form_homePostcode" name="homePostcode" class="form-control" placeholder="Please enter home postcode (if different)">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_homePhone">Home telephone </label>
+                                            <input type="tel" id="form_homePhone" name="homePhone" class="form-control" placeholder="If applicable">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_mobilePhone">Mobile telephone *</label>
+                                            <input type="tel" id="form_mobilePhone" name="mobilePhone" class="form-control" placeholder="Please enter mobile phone number" required="required" data-error="contact number is required">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email address *</label>
+                                            <input type="email" id="form_email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="valid email is required">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_medical">Medical/Allergies </label>
+                                            <textarea name="medical" id="form_medical" class="form-control" placeholder="any medical conditions or allergies" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_message">Any other information </label>
+                                            <textarea name="message" id="form_message" class="form-control" placeholder="any other information" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="radio">
+                                            <label for="form_group" class="text-bold">Permission to administer First-Aid *</label><br>
+                                            <label><input type="radio" name="optradio" required="required" data-error="First Aid must be allowed or denied">Yes</label><br>
+                                            <label><input type="radio" name="optradio" required="required" data-error="First Aid must be allowed or denied">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pb-3 pt-5">
+                                    <input type="submit" class="btn btn-warning btn-send" value="Send form">
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </footer>
+                </div>
+                <!-- Footer -->
+                <div class="container-fluid" id="main-rev">
+                    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+                        <div class="container text-center text-md-left">
+                            <div class="row text-center">
+                                <div class="col-lg-4 col-md-6 mx-auto">
+                                    <p>
+                                        <i class="fas fa-home mr-3"></i>Met Police Sports ground, Chigwell, <br>Essex IG7 6BD</p>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mx-auto">
+                                    <p>
+                                        <i class="fas fa-envelope mr-3"></i><a href="mailto:info@essexrangers2020.org" style="color: white;">info@essexrangers2020.org</a>
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mx-auto">
+                                    <p>
+                                        <i class="fas fa-phone mr-3"></i> 07737 965939</p>
+                                </div>
+                            </div>
+
+                            <!-- Copyright -->
+                            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                                <a href="https://www.darengallery.co.uk"> darengallery</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
             </div>
-        </div>
 
 
 
 
 
-        <!--Optional Javascript-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <!--Optional Javascript-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>
