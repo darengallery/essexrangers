@@ -21,7 +21,7 @@ $medical = $_POST['medical'];
 $message = $_POST['message'];
 $optradio = $_POST['optradio'];
 
-$formcontent="$firstName \n Players First Name: $playersFirstName \n PLayers Last Name: $playersLastName \n Players date-of-Birth: $dob \n Players School:  $playersSchool \n Players School Address: $playersSchoolAddress \n Players School postcode: $playersSchoolPostcode \n Players School Year: $playersSchoolYear \n Players Home Address: $playersHomeAddress \n Players Home Postcode: $playersHomePostcode \n First Name: $name \n Last Name: $lastName \n Relationship to player: $relationship \n Home Address: $homeAddress \n Home Postcode: $homePostcode \n Home Phone: $homePhone \n Mobile Phone: $mobilePhone \n Email Address: $email \n Medical: $medical \n Message: $message \n First Aid: $optradio";
+$formcontent="$firstName \n Players First Name: $playersFirstName \n PLayers Last Name: $playersLastName \n Players date-of-Birth: $dob \n Players School:  $playersSchool \n Players School Address: $playersSchoolAddress \n Players School postcode: $playersSchoolPostcode \n Players School Year: $playersSchoolYear \n Players Home Address: $playersHomeAddress \n Players Home Postcode: $playersHomePostcode \n First Name: $fistNname \n Last Name: $lastName \n Relationship to player: $relationship \n Home Address: $homeAddress \n Home Postcode: $homePostcode \n Home Phone: $homePhone \n Mobile Phone: $mobilePhone \n Email Address: $email \n Medical: $medical \n Message: $message \n First Aid: $optradio";
 
 $recipient = "daren_gallery@hotmail.com";
 $subject = "Contact Form";
