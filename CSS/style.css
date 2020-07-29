@@ -16,6 +16,10 @@
     background-color: #799dd1;
 }
 
+li {
+    list-style-type: none;
+}
+
 #light {
     color: #799dd1;
 }
