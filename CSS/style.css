@@ -103,3 +103,26 @@ li {
     background-size: cover;
     color: #ffffff;
 }
+
+.blinking {
+    background-color: #799dd1;
+    animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        color: #ffffff;
+    }
+    49% {
+        color: #ffffff;
+    }
+    60% {
+        color: transparent;
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        color: #ffffff;
+    }
+}
